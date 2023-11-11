@@ -15,7 +15,6 @@
 
 <script setup lang="ts">
 import Tech from '@/components/TheTech.vue'
-import { link } from 'fs';
 
 import type { Ref } from 'vue';
 import { ref, onMounted, reactive } from 'vue'
@@ -101,10 +100,6 @@ const arrStateManagement = ref(['Pinia', 'Reactivity API'])
 const uiLink = ref('')
 
 const arrVueOpts = ref(['Vue 3 Options API', 'Vue 3 Composition API', 'Nuxt 3'])
-
-function getLink() {
-  return
-}
 
 onMounted(() => {
   generate()
